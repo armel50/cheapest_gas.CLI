@@ -1,14 +1,9 @@
 #!/usr/bin/env ruby
+# require_relative '../config/environment'
+# require "bundler/setup"
+ require '/Users/home/Desktop/learn.co/cheapest_gas_CLI/lib/command_line_interface.rb'
 
-require "bundler/setup"
-require "cheapest_gas_CLI"
 
-# You can add fixtures and/or initialization code here to make experimenting
-# with your gem easier. You can also use a different console, if you like.
+CommandLineInterface.new
 
-# (If you use this, don't forget to add pry to your Gemfile!)
-# require "pry"
-# Pry.start
 
-require "irb"
-IRB.start(__FILE__)
