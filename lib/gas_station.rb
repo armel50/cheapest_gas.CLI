@@ -11,7 +11,6 @@ class Gas_station
 
 
     def self.create_gas_station_from_data(array_of_gas_station) 
-
         array_of_gas_station.each do |gas_station|
              gas_object =self.new(gas_station) 
              @@all << gas_object if gas_object.price
@@ -24,7 +23,7 @@ class Gas_station
         data.each {|key,val| the_gas_station.send("#{key}=",val) }
     end
   
-    
+
     def self.all 
         @@all.sort_by{|gas_station| gas_station.price }
     end
