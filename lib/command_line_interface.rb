@@ -29,12 +29,16 @@ class CommandLineInterface
       puts "Would like to see the cheapest gas stations near you? (yes/no)"
       answer_to_zip_code = gets.strip 
      
-      ["YES","Y"].include?(answer_to_zip_code.upcase) ? basic_info : goodbye
-
+      if ["YES","Y"].include?(answer_to_zip_code.upcase) 
+        basic_info
         puts "Would you like more information? (yes/no)" 
         more_info_answer = gets.strip 
+        ["YES","Y"].include?(more_info_answer.upcase) ? more_info : goodbye
+      else 
+        goodbye
+      end
 
-      ["YES","Y"].include?(more_info_answer.upcase) ? more_info : goodbye
+      
     end
 
 
