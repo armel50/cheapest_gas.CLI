@@ -5,10 +5,12 @@ require 'colorize'
 require 'pry'
 
 
-class CommandLineInterface 
-  attr_accessor :url
+class CommandLineInterface
+  
+  
+  attr_accessor :url, :the_user_zip_code
 
-    def initialize 
+    def initialize(the_user_zip_code = nil)
     welcome
     proccess
     end
@@ -77,7 +79,7 @@ class CommandLineInterface
       the_user_zip_code = gets.strip
       while !valid?(the_user_zip_code) do 
         puts "Please enter a valid zip code"
-        the_user_zip_code = gets.strip
+        @the_user_zip_code = gets.strip
       end
       url ="https://www.gasbuddy.com/home?search=#{the_user_zip_code}&fuel=1" 
       gas_stations = Scraper.scraper_the_cheapest_nearby(url)

@@ -1,8 +1,7 @@
 #!/usr/bin/env ruby
 # require_relative '../config/environment'
 # require "bundler/setup"
- require '/Users/home/Desktop/learn.co/cheapest_gas_CLI/lib/command_line_interface.rb'
-
+ require '/Users/home/Desktop/learn.co/cheapest_gas_CLI/lib/cheapest_gas_CLI.rb'
 
 CommandLineInterface.new
 

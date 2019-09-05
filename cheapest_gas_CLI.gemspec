@@ -1,6 +1,6 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "cheapest_gas_CLI/version"
+require "cheapest_gas_CLI/command_line_interface"
 
 Gem::Specification.new do |spec|
   spec.name          = "cheapest_gas_CLI"
