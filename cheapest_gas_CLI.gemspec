@@ -1,10 +1,10 @@
 lib = File.expand_path("lib", __dir__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "cheapest_gas_CLI/command_line_interface"
+#require "cheapest_gas_CLI/command_line_interface"
 
 Gem::Specification.new do |spec|
   spec.name          = "cheapest_gas_CLI"
-  spec.version       = "0.0.0"
+  spec.version       = "0.0.1"
   spec.authors       = ["Cloe Kouadjo"]
   spec.email         = ["armelfli50@gmail.com"]
 
@@ -23,8 +23,8 @@ Gem::Specification.new do |spec|
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
   end
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.bindir        = "bin"
+  spec.executables   = "find-gas"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 2.0"

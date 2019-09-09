@@ -1,5 +1,5 @@
- require "/Users/home/Desktop/learn.co/cheapest_gas_CLI/lib/gas_station.rb"
- require "/Users/home/Desktop/learn.co/cheapest_gas_CLI/lib/scraper.rb"
+ require_relative "./gas_station.rb"
+ require_relative "./scraper.rb"
 require 'nokogiri'
 require 'colorize' 
 require 'pry'
