@@ -20,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-The gem was design to provide information such as the name of the gas station, its price, and its address.To experiment with that code, run `bin/console` for an interactive prompt.
+The gem was design to provide information such as the name of the gas station, its price, and its address.To experiment with that code, run ` CommandLineInterface.new` for an interactive prompt.  
+If you downloaded the repository throughout github run `bin/find-gas`
+
 
 ## Development
 
