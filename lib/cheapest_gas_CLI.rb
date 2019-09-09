@@ -5,7 +5,7 @@ require 'colorize'
 require 'pry'
 
 
-class CommandLineInterface
+class Cheapest_gas_CLI
   
   
   attr_accessor :url, :the_user_zip_code

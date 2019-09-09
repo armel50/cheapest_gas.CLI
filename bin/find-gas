@@ -1,8 +1,8 @@
-!/usr/bin/env ruby
-require_relative '../config/environment'
-require "bundler/setup"
- require_relative '../lib/cheapest_gas_CLI.rb'
+#!/usr/bin/env ruby
+#  require_relative '../config/environment'
+# require "bundler/setup"
+require_relative '../lib/cheapest_gas_CLI.rb'
 
-CommandLineInterface.new
+Cheapest_gas_CLI.new
 
 
